@@ -178,7 +178,7 @@ describe("Exchange", async () => {
       );
     });
 
-    it.only("transfers at least the minimum output amount of tokens", async () => {
+    it("transfers at least the minimum output amount of tokens", async () => {
       const userEtherBalance = await getBalance(user.address);
       const userTokenBalance = await token.balanceOf(user.address);
       const exchangeEthBalance = await getBalance(exchange.address);
